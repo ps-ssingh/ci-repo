@@ -9,14 +9,13 @@ pipeline {
     }
     stage('Test') {
       steps {
-        echo "testing"
+        echo "testing changes"
         sleep 30
       }
     }
     stage('Deploy') {
       steps {
         echo "deploying"
-        stageMessage "sample stage message"
       }
     }
   }
